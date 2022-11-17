@@ -1,0 +1,196 @@
+:root{
+    --Strongcyan: hsl(172, 67%, 45%);
+    --Verydarkcyan: hsl(183, 100%, 15%);
+    --Darkgrayishcyan: hsl(186, 14%, 43%);
+    --Grayishcyan: hsl(184, 14%, 56%);
+    --Lightgrayishcyan: hsl(185, 41%, 84%);
+    --Verylightgrayishcyan: hsl(189, 41%, 97%);
+    --White: hsl(0, 0%, 100%);
+}
+body{
+    font-family: 'Inter', sans-serif;
+    font-family: 'Prata', serif;
+    font-family: 'Space Mono', monospace;
+    background-color: hsl(185, 41%, 84%) ;
+    margin: 0;
+    padding:0 ;
+   
+    
+}
+.caption{
+    color: hsl(186, 14%, 43%);
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    text-align: center;
+    font-size: 24px;
+    margin-top: 150px;
+    margin-bottom:50px;
+}
+header{
+    background-color:hsl(0, 0%, 100%) ;
+    margin-right: auto;
+    margin-left: auto ;
+    border-radius: 30px;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+    width: 80vw;
+}
+header .left{
+    padding: 10px;
+    border-radius: 20px;
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+}
+header .left .bill{
+    color: hsl(184, 14%, 56%) ;
+    text-transform: capitalize;
+}
+
+header .left input{
+    border: none;
+    background-color: hsl(189, 41%, 97%);
+    width: 95%;
+    height: 40px;
+
+}
+header .left .input-icon{
+    background-color: hsl(189, 41%, 97%);
+    padding: 10px;
+    border-radius: 10px;
+    margin-top:10px ;
+
+}
+.buttons{
+   padding: 20px 0;
+}
+button{
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    color:hsl(0, 0%, 100%);
+    background-color: hsl(183, 100%, 15%) ;
+    font-size: 25px;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Prata', serif;
+    font-family: 'Space Mono', monospace;
+    
+}
+.btns{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr ;
+    gap: 10px 20px;
+    margin-top: 10px;
+    
+}
+button:hover{
+  cursor: pointer;
+  color:hsl(183, 100%, 15%);
+  background-color:hsl(172, 67%, 45%) ;
+}
+header .right{
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 20px;
+    display: grid;
+    grid-row: 1fr 1fr 2fr;
+    padding: 10px 30px;
+}
+header .right .title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .right .title .result{
+    font-size: 50px;
+} 
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:767px){
+    .caption{
+        color: hsl(186, 14%, 43%);
+        text-transform: uppercase;
+        letter-spacing: 7px;
+        text-align: center;
+        font-size: 24px;
+        margin-top: 50px;
+        margin-bottom:50px;
+    }
+    header{
+        background-color:hsl(0, 0%, 100%) ;
+        border-radius: 30px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        
+        align-items: center;
+        justify-content: center;
+    }
+    header .left input{
+        border: none;
+        background-color: hsl(189, 41%, 97%);
+        width: 80%;
+        height: 40px;
+    
+    }
+    header .left .input-icon{
+        background-color: hsl(189, 41%, 97%);
+        padding: 10px;
+        border-radius: 10px;
+        margin-top:10px ;
+    
+    }
+    .buttons{
+       padding: 20px 0;
+    }
+    button{
+        width: 100%;
+        height: 50px;
+        border: none;
+        border-radius: 10px;
+        color:hsl(0, 0%, 100%);
+        background-color: hsl(183, 100%, 15%) ;
+        font-size: 25px;
+        font-family: 'Inter', sans-serif;
+        font-family: 'Prata', serif;
+        font-family: 'Space Mono', monospace;
+        
+    }
+    .btns{
+        display: grid;
+        align-items: center;
+        grid-template-columns: 1fr 1fr  ;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: 10px 20px;
+        margin-top: 10px;
+        
+    }
+    header .right{
+        background-color: hsl(183, 100%, 15%);
+        border-radius: 20px;
+        display: grid;
+        grid-row: 1fr 1fr 1fr;
+        padding: 30px;
+        width: 85%;
+    }
+    header .right .title{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    header .right .title .result{
+        font-size: 30px;
+    } 
+}
